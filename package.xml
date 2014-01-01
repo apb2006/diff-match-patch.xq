@@ -1,0 +1,6 @@
+<zip dest="dist/diff-match-patch.zar">
+	<text src="packing/expath-pkg.xml" dest="expath-pkg.xml" />
+	<text src="packing/basex.xml" dest="basex.xml" />
+	<text src="xq/diff-patch-match.xqm" dest="content/diff-patch-match.xqm" />
+	<binary src="dist/diff_patch_match.jar" dest="content/diff_patch_match.jar" />
+</zip>

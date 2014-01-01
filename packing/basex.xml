@@ -1,0 +1,4 @@
+<package xmlns="http://www.basex.org/modules/pkg">
+   <jar>diff_patch_match.jar</jar>
+   <class>name.fraser.neil.plaintext.Diff_match_patch</class>
+</package>

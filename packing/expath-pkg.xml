@@ -1,0 +1,14 @@
+<package xmlns="http://expath.org/ns/pkg"
+         name="apb.string.diff-patch-match"
+         abbrev="content"
+         version="1.0.0"
+         spec="1.0">
+
+   <title>String differences using http://code.google.com/p/google-diff-match-patch/</title>
+   <dependency processor="basex" />
+   <xquery> 
+     <namespace>apb.string.diff-patch-match</namespace>
+     <file>diff-patch-match.xqm</file>
+   </xquery>
+
+</package>
