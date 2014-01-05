@@ -18,6 +18,19 @@ result
 <INSERT>imilar</INSERT>
 <EQUAL> string</EQUAL>
 ````
+
+````
+import module namespace dmp="apb.string.Diff_patch_match";
+dmp:diff("The test string","The similar string","semantic")
+````
+result
+````
+<EQUAL>The </EQUAL>
+<DELETE>test</DELETE>
+<INSERT>similar</INSERT>
+<EQUAL> string</EQUAL>
+````
+
 # Installation @TODO
 The library is packaged in the [EXpath](http://expath.org/spec/pkg) xar format with 
 the  jars included. It can be installed into the BaseX repository by 
