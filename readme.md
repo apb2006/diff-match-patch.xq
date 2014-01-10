@@ -11,24 +11,28 @@ dmp:diff("The test string","The similar string")
 ````
 result
 ````
-<EQUAL>The </EQUAL>
-<DELETE>te</DELETE>
-<EQUAL>s</EQUAL>
-<DELETE>t</DELETE>
-<INSERT>imilar</INSERT>
-<EQUAL> string</EQUAL>
+<diffs>
+  <equal>The </equal>
+  <delete>te</delete>
+  <equal>s</equal>
+  <delete>t</delete>
+  <insert>imilar</insert>
+  <equal> string</equal>
+</diffs>
 ````
 
 ````
-import module namespace dmp="apb.string.Diff_patch_match";
-dmp:diff("The test string","The similar string","semantic")
+import module namespace dmp = "java:apb.string.Diff_match_patch";
+dmp:diff_cleanupSemantic("The test string","The similar string"
 ````
 result
 ````
-<EQUAL>The </EQUAL>
-<DELETE>test</DELETE>
-<INSERT>similar</INSERT>
-<EQUAL> string</EQUAL>
+<diffs>
+  <equal>The </equal>
+  <delete>test</delete>
+  <insert>similar</insert>
+  <equal> string</equal>
+</diffs>
 ````
 
 # Installation @TODO
